@@ -1,0 +1,24 @@
+# Creamos la función verifica_numero, la cual va a comprobar que el número (x) pertenezca a la lista (A)
+# Dicho lo anterior, las entradas correspondientes son: x (variable numérica) y A (Lista o vector)
+def verifica_numero (x, A):
+    # Creamos la variable b, la cual sera 1 en caso afirmativo
+    # Es decir, cuando el número x pertenezca a la lista A
+    b = 0
+    # Creamos otra variable que nos servira para que el ciclo no sea infinito
+    i = 0
+    # Guardamos en i_máximo el tamaño de la lista
+    i_máximo = len(A)
+    # Mientras que b sea 0 (no se haya encontrado un caso afirmativo) y i sea menor al tamaño de la lista(ayuda a que el ciclo sea finito)
+    while (b < 1) and (i < i_máximo):
+        # Si x es igual al elemento de la lista
+        if x == A[i]:
+            # Suma 1 a la variable b
+            b = b + 1
+        # Si x es diferente al elemento de la lista
+        elif x != A[i]:
+            # Suma a la variable i (viene a recorrer las iteracciones por el tamaño de lista)
+            i = i + 1
+    # Retorna b
+    return b
+# Se llama a la función 
+verifica_numero (5, [1,2,3,4,6,5])
