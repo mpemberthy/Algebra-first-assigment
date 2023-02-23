@@ -1,0 +1,28 @@
+### 2. Subconjunto
+# Creamos la función subconjunto, la cual va a verificar si A(lista o vector) es un subconjunto de B(lista o vector)
+# Las entradas A y B son listas o vectores
+def subconjunto(A,B):
+    # Primero guardaremos en la varibale tamaño_conjuntoA el tamaño de la lista A
+    tamaño_conjuntoA= len(A)
+    # Tambien llevaremos un contador para usarlo después en nuestra condición
+    contador= 0
+    # Este bucle lo que hace es recorrer todos los elementos de A y verificar si pertenecen o no
+    # al conjunto B, eso lo vamos llevando en un contador para que al final comprobemos si A es un
+    # subconjunto de B
+    # Para x en la lista A:
+    for x in A:
+        # Si el elemento x pertenece a la lista B
+        if verifica_numero(x, B)== 1:
+            # Suma al contador
+            contador+=1
+    # Si el tamaño del conjunto A es igual al contador
+    # Es decir que A si es un subconjunto de B
+    if tamaño_conjuntoA== contador:
+        # Imprime 1
+        print(1)
+    # Si no
+    else:
+        # Imprime 0
+        print(0)
+# Llamamos a la función 
+subconjunto([1,2,3],[1,2,3,4,5,6])
