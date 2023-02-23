@@ -1,3 +1,4 @@
+### 1. x ∈ A 
 # Creamos la función verifica_numero, la cual va a comprobar que el número (x) pertenezca a la lista (A)
 # Dicho lo anterior, las entradas correspondientes son: x (variable numérica) y A (Lista o vector)
 def verifica_numero (x, A):
@@ -20,5 +21,4 @@ def verifica_numero (x, A):
             i = i + 1
     # Retorna b
     return b
-# Se llama a la función 
-verifica_numero (5, [1,2,3,4,6,5])
+verifica_numero (7, [10,2,3,4,6,5])
